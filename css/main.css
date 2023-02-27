@@ -22,12 +22,21 @@ blockquote {
     background-position: 0% 50%;
   }
 }
+.hero .herochild {
+  height: 66vh;
+}
+@media (min-width: 768px) {
+  .hero .herochild {
+    height: auto;
+  }
+}
+
 .hero .background {
   height: 60vh;
 }
 @media (min-width: 768px) {
   .hero .background {
-    height: 85vh;
+    min-height: 85vh;
   }
 }
 .hero .background.background-text {
@@ -35,7 +44,7 @@ blockquote {
 }
 @media (min-width: 768px) {
   .hero .background.background-text {
-    height: 85vh;
+    min-height: 85vh;
   }
 }
 

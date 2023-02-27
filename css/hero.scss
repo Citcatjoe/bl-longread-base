@@ -57,7 +57,13 @@ body
     }
   }
   
-
+.hero .herochild
+{
+    height:66vh;
+    @include breakpoint(min, medium) {
+        height: auto;
+    };
+}
 .hero
 {
     
@@ -67,14 +73,14 @@ body
     {
         height: 60vh; 
         @include breakpoint(min, medium) {
-            height: 85vh; 
+            min-height: 85vh; 
         }; 
 
         &.background-text
         {
             height: auto;
             @include breakpoint(min, medium) {
-                height: 85vh ; 
+                min-height: 85vh ; 
             }; 
         }
     }
